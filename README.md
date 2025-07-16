@@ -45,4 +45,4 @@ It automatically captures exceptions and logs with context, helping you identify
 
 ## License
 
-This project is licensed under the XYZ License - see the LICENSE file for details.
+This project is licensed under the GPL-3.0 license - see the LICENSE file for details.
