@@ -1,0 +1,11 @@
+{
+  "id": "sentrylogger",
+  "name": "SentryLogger",
+  "version": "$version",
+  "description": "Send errors to sentry",
+  "authors": [
+    "budi1200"
+  ],
+  "dependencies": [],
+  "main": "si.budimir.sentrylogger.velocity.SentryLoggerVelocity"
+}
