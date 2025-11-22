@@ -23,10 +23,13 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew shadowJar
 
+      - name: Collect artifacts
+        run: |
+          mkdir artifacts
+          find platform -name "sentrylogger-*.jar" ! -name "*-unshaded.jar" -exec cp {} artifacts/ \;
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v5
         with:
           name: SentryLogger
-          path: |
-            platform/**/build/libs/sentrylogger-*.jar
-            !platform/**/build/libs/*-unshaded.jar
+          path: artifacts
